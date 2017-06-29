@@ -56,9 +56,71 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 480px 480px;
+  grid-template-rows: 50px [header-bottom] 400px;
+  grid-template-areas: "header header"
+                       "jumbo jumbo"
+                       "why-dai dai-system-vid"
+                       "with-dai-text with-dai-text"
+                       "mkr-token-vid mkr-holders-govern-dai"
+                       "the-next-generation-text the-next-generation-text"
+                       "subscribe dai-foundation-text"
+                       "links links"
+                       "copyright copyright";
+}
 
+header {
+  grid-area: header;
+  background-color: gray;
+}
 
+#jumbo {
+  grid-area: jumbo;
+  background-color: rgb(0, 211, 183);
+}
 
+#why-dai {
+  grid-area: why-dai;
+}
+
+#dai-system-vid {
+  grid-area: dai-system-vid;
+}
+
+#with-dai-text {
+  grid-area: with-dai-text;
+}
+
+#mkr-token-vid {
+  grid-area: mkr-token-vid;
+}
+
+#mkr-holders-govern-dai {
+  grid-area: mkr-holders-govern-dai;
+}
+
+#the-next-generation-text {
+  grid-area: the-next-generation-text;
+}
+
+#subscribe {
+  grid-area: subscribe;
+}
+
+#dai-foundation-text {
+  grid-area: dai-foundation-text;
+}
+
+#links {
+  grid-area: links;
+}
+
+#copyright {
+  grid-area: copyright;
+}
 
 
 
