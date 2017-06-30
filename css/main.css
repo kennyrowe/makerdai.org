@@ -124,6 +124,33 @@ header nav a {
   left: 60px;
 }
 
+#watch-overview-btn {
+  width: 265px;
+  height: 71px;
+  position: absolute;
+  top: 386px;
+  left: 62px;
+  opacity: 0.88;
+  background-color: rgba(0,0,0,0.15);
+  color: #FFF;
+}
+
+#watch-overview-btn i {/* play icon */
+  font-size: 45px;
+  position: absolute;
+  top: 12px;
+  left: 22px;
+}
+
+#watch-overview-btn a {
+  font-family: Futura;
+  font-size: 22px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 19px;
+  left: 74px;
+}
+
 #why-dai {
   grid-area: why-dai;
 }
