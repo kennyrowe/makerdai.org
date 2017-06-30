@@ -59,7 +59,7 @@ textarea {
 .container {
   display: grid;
   justify-content: center;
-  grid-template-columns: 480px 480px;
+  grid-template-columns: 512px 512px;
   grid-template-rows: 50px [header-bottom] 400px;
   grid-template-areas: "header header"
                        "jumbo jumbo"
