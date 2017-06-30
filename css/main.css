@@ -60,7 +60,8 @@ textarea {
   display: grid;
   justify-content: center;
   grid-template-columns: 512px 512px;
-  grid-template-rows: 50px [header-bottom] 400px;
+  grid-template-rows: 90px [header-bottom] 552px;
+  justify-items: stretch;
   grid-template-areas: "header header"
                        "jumbo jumbo"
                        "why-dai dai-system-vid"
@@ -74,7 +75,23 @@ textarea {
 
 header {
   grid-area: header;
-  background-color: gray;
+  position: relative;
+}
+
+header #logo {
+  position: absolute;
+  top: 30px;
+  left: 48px;
+}
+
+header nav {
+  float: right;
+  margin-top: 30px;
+}
+
+header nav a {
+  margin-right: 47px;
+
 }
 
 #jumbo {
