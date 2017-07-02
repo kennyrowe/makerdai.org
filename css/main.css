@@ -91,28 +91,28 @@ p {
 #main-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 60px 1fr 1fr 60px;
   grid-template-rows: 90px [header-bottom] 552px;
   justify-items: stretch;
-  grid-template-areas: "header header"
-                       "jumbo jumbo"
-                       "dash-1 dash-1"
-                       "why-dai dai-system-vid"
-                       "with-dai-text with-dai-text"
-                       "dash-2 dash-2"
-                       "mkr-token-vid mkr-holders-govern-dai"
-                       "the-next-generation-text the-next-generation-text";
+  grid-template-areas: ". header header ."
+                       "jumbo jumbo jumbo jumbo"
+                       ". dash-1 dash-1 ."
+                       ". why-dai dai-system-vid ."
+                       ". with-dai-text with-dai-text ."
+                       ". dash-2 dash-2 ."
+                       ". mkr-token-vid mkr-holders-govern-dai ."
+                       ". the-next-generation-text the-next-generation-text .";
   background-color: white;
 }
 
 #footer-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 94px 1fr 1fr 94px;
   justify-items: stretch;
-  grid-template-areas: "subscribe dai-foundation-text"
-                       "links links"
-                       "copyright copyright";
+  grid-template-areas: ". subscribe dai-foundation-text ."
+                       ". links links ."
+                       ". copyright copyright .";
   background-color: #0B141F;
   color: white;
 }
@@ -129,7 +129,6 @@ header {
 header #logo {
   position: absolute;
   top: 30px;
-  left: 48px;
 }
 
 header nav {
@@ -138,7 +137,7 @@ header nav {
 }
 
 header nav a {
-  margin-right: 47px;
+  margin-left: 47px;
   text-decoration: none;
   font-family: Roboto-Regular;
   font-size: 16px;
@@ -149,6 +148,7 @@ header nav a {
   grid-area: jumbo;
   background-color: rgb(0, 211, 183);
   position: relative;
+  justify-items: stretch;
 }
 
 #jumbo-legend {
