@@ -56,15 +56,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
- @font-face {
-     font-family: Roboto-Regular;
-     src: url(../assets/fonts/Roboto-Regular.ttf);
- }
+@font-face {
+ font-family: Roboto-Regular;
+ src: url(../assets/fonts/Roboto-Regular.ttf);
+}
 
- @font-face {
-     font-family: Futura;
-     src: url(../assets/fonts/Futura.ttc);
- }
+@font-face {
+ font-family: Futura;
+ src: url(../assets/fonts/Futura.ttc);
+}
+
+.big-text {
+  font-family: Futura;
+  font-size: 36px;
+  color: #121212;
+}
 
 .container {
   display: grid;
@@ -74,8 +80,10 @@ textarea {
   justify-items: stretch;
   grid-template-areas: "header header"
                        "jumbo jumbo"
+                       "dash-1 dash-1"
                        "why-dai dai-system-vid"
                        "with-dai-text with-dai-text"
+                       "dash-2 dash-2"
                        "mkr-token-vid mkr-holders-govern-dai"
                        "the-next-generation-text the-next-generation-text"
                        "subscribe dai-foundation-text"
@@ -151,6 +159,19 @@ header nav a {
   left: 74px;
 }
 
+#dash-1 {
+  grid-area: dash-1;
+  padding-left: 10px;
+}
+
+.dash {
+  width: 35px;
+  height: 8px;
+  background-color: black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 #why-dai {
   grid-area: why-dai;
 }
@@ -161,6 +182,11 @@ header nav a {
 
 #with-dai-text {
   grid-area: with-dai-text;
+}
+
+#dash-2 {
+  grid-area: dash-2;
+  justify-self: center;
 }
 
 #mkr-token-vid {
