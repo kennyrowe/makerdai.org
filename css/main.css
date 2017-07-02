@@ -72,6 +72,22 @@ textarea {
   color: #121212;
 }
 
+p {
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  color: #727272;
+  line-height: 28px;
+}
+
+.dark {
+  background-color: #0B141F;
+  color: white;
+}
+
+.dark p {
+  color: white;
+}
+
 .container {
   display: grid;
   justify-content: center;
@@ -203,6 +219,10 @@ header nav a {
 
 #subscribe {
   grid-area: subscribe;
+}
+
+#subscribe .big-text {
+  color: white;
 }
 
 #dai-foundation-text {
