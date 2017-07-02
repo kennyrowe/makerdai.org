@@ -56,6 +56,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+  background-color: whitesmoke;
+}
+
 @font-face {
  font-family: Roboto-Regular;
  src: url(../assets/fonts/Roboto-Regular.ttf);
@@ -79,19 +83,15 @@ p {
   line-height: 28px;
 }
 
-.dark {
-  background-color: #0B141F;
-  color: white;
-}
-
-.dark p {
-  color: white;
-}
-
 .container {
+  margin: 0 auto;
+  width: 1024px;
+}
+
+#main-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: 512px 512px;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 90px [header-bottom] 552px;
   justify-items: stretch;
   grid-template-areas: "header header"
@@ -101,10 +101,24 @@ p {
                        "with-dai-text with-dai-text"
                        "dash-2 dash-2"
                        "mkr-token-vid mkr-holders-govern-dai"
-                       "the-next-generation-text the-next-generation-text"
-                       "subscribe dai-foundation-text"
+                       "the-next-generation-text the-next-generation-text";
+  background-color: white;
+}
+
+#footer-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+  grid-template-areas: "subscribe dai-foundation-text"
                        "links links"
                        "copyright copyright";
+  background-color: #0B141F;
+  color: white;
+}
+
+#footer-grid p {
+  color: white;
 }
 
 header {
