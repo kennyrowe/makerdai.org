@@ -258,6 +258,31 @@ header nav a {
   color: white;
 }
 
+#subscribe input {
+  background: none;
+  border:0;
+  border-bottom: 1px solid #979797;
+  width: 325px;
+  line-height: 0px;
+  padding-bottom: 10px;
+}
+
+#subscribe .button {
+  width: 153px;
+  height: 58px;
+  background-color: #1BC4A6;
+  font-family: Futura;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#subscribe input, #subscribe .button {
+  margin-top: 40px;
+}
+
 #dai-foundation-text {
   grid-area: dai-foundation-text;
 }
