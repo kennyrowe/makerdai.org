@@ -258,6 +258,8 @@ header nav a {
 
 #links {
   grid-area: links;
+  display: flex;
+  justify-content: space-between;
 }
 
 #copyright {
