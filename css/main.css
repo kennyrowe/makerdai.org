@@ -170,23 +170,28 @@ header nav a {
   left: 62px;
   opacity: 0.88;
   background-color: rgba(0,0,0,0.15);
+}
+
+#watch-overview-btn .play-link {
+  margin-left: 22px;
+  position: relative;
+  top: -4px;
+}
+
+#watch-overview-btn .play-link a {
   color: #FFF;
 }
 
-#watch-overview-btn i {/* play icon */
+.play-link-btn {/* play icon */
   font-size: 45px;
-  position: absolute;
-  top: 12px;
-  left: 22px;
+  text-decoration: none;
+  position: relative;
+  top: 9px;
 }
 
-#watch-overview-btn a {
+.play-link-text {
   font-family: Futura;
   font-size: 22px;
-  color: #FFFFFF;
-  position: absolute;
-  top: 19px;
-  left: 74px;
 }
 
 #dash-1 {
@@ -204,6 +209,10 @@ header nav a {
 
 #why-dai {
   grid-area: why-dai;
+}
+
+#why-dai .play-link a {
+  color: #F8B46B;
 }
 
 #dai-system-vid {
@@ -225,6 +234,10 @@ header nav a {
 
 #mkr-holders-govern-dai {
   grid-area: mkr-holders-govern-dai;
+}
+
+#mkr-holders-govern-dai .play-link a {
+  color: #41D3A9;
 }
 
 #the-next-generation-text {
