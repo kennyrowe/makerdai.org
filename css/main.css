@@ -57,7 +57,7 @@ textarea {
    ========================================================================== */
 
 body {
-  background-color: whitesmoke;
+  background-color: #FFF;
 }
 
 @font-face {
@@ -89,16 +89,11 @@ p {
   line-height: 28px;
 }
 
-.container {
-  margin: 0 auto;
-  width: 1024px;
-}
-
 #main-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: 60px 1fr 1fr 60px;
-  grid-template-rows: 90px [header-bottom] 552px;
+  grid-template-columns: 1fr 452px 452px 1fr;
+  grid-template-rows: 90px [header-bottom];
   justify-items: stretch;
   grid-template-areas: ". header header ."
                        "jumbo jumbo jumbo jumbo"
@@ -114,7 +109,7 @@ p {
 #footer-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: 94px 1fr 1fr 94px;
+  grid-template-columns: auto 418px 418px auto;
   justify-items: stretch;
   grid-template-areas: ". subscribe dai-foundation-text ."
                        ". links links ."
@@ -153,8 +148,13 @@ header nav a {
 #jumbo {
   grid-area: jumbo;
   background-color: rgb(0, 211, 183);
-  position: relative;
-  justify-items: stretch;
+  max-height: 650px;
+  overflow: hidden;
+}
+
+#jumbo video {
+  width: 100%;
+  min-width: 1024px;
 }
 
 #jumbo-legend {
@@ -335,8 +335,6 @@ header nav a {
   font-size: 16px;
   color: #8A8A8A;
 }
-
-
 
 
 
