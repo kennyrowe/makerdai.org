@@ -111,6 +111,9 @@ p {
   justify-content: center;
   grid-template-columns: auto 418px 418px auto;
   justify-items: stretch;
+  grid-row-gap: 52px;
+  padding-top: 60px;
+  padding-bottom: 55px;
   grid-template-areas: ". subscribe dai-foundation-text ."
                        ". links links ."
                        ". copyright copyright .";
