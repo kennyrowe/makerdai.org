@@ -232,6 +232,14 @@ header nav a {
   grid-area: dai-system-vid;
 }
 
+#dai-system-vid .vid-preview {
+  float: right;
+}
+
+.vid-preview img {
+  display: block;
+}
+
 .vid-summary {
   font-family: Roboto-Regular;
   font-size: 12px;
