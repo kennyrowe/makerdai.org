@@ -92,7 +92,7 @@ p {
 #main-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr 452px 452px 1fr;
+  grid-template-columns: 1fr [content-start] 452px [middle] 452px [content-end] 1fr;
   grid-template-rows: 90px [header-bottom];
   justify-items: stretch;
   grid-template-areas: ". header header ."
@@ -150,11 +150,22 @@ header nav a {
   background-color: rgb(0, 211, 183);
   max-height: 650px;
   overflow: hidden;
+  z-index: 1;
 }
 
 #jumbo video {
-  width: 100%;
   min-width: 1024px;
+  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#jumbo-content {
+  grid-column: content-start;
+  grid-row: jumbo-start;
+  z-index: 2;
+  align-self: center;
 }
 
 #jumbo-legend {
@@ -163,19 +174,14 @@ header nav a {
   color: #FFFFFF;
   width: 364px;
   height: 234px;
-  position: absolute;
-  top: 124px;
-  left: 60px;
 }
 
 #watch-overview-btn {
   width: 265px;
   height: 71px;
-  position: absolute;
-  top: 386px;
-  left: 62px;
   opacity: 0.88;
   background-color: rgba(0,0,0,0.15);
+  margin-top: 28px;
 }
 
 #watch-overview-btn .play-link {
