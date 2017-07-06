@@ -129,7 +129,8 @@ header {
 
 header #logo {
   position: absolute;
-  top: 20px;
+  top: 10px;
+  left: -10px;
 }
 
 header nav {
@@ -231,16 +232,6 @@ header nav a {
   grid-area: dai-system-vid;
 }
 
-#dai-system-vid .vid-preview {
-  border-color: #FCD370;
-}
-
-.vid-preview {
-  width: 364px;
-  height: 193px;
-  border: 12px solid;
-}
-
 .vid-summary {
   font-family: Roboto-Regular;
   font-size: 12px;
@@ -259,10 +250,6 @@ header nav a {
 
 #mkr-token-vid {
   grid-area: mkr-token-vid;
-}
-
-#mkr-token-vid .vid-preview {
-  border-color: #41D3A9;
 }
 
 #mkr-holders-govern-dai {
