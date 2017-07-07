@@ -92,18 +92,50 @@ p {
 #main-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr [content-start] 452px [middle] 452px [content-end] 1fr;
+  grid-template-columns: 1fr 60px [content-start] 452px 452px [content-end] 60px 1fr;
   grid-template-rows: 90px [header-bottom];
   justify-items: stretch;
-  grid-template-areas: ". header header ."
-                       "jumbo jumbo jumbo jumbo"
-                       ". dash-1 dash-1 ."
-                       ". why-dai dai-system-vid ."
-                       ". with-dai-text with-dai-text ."
-                       ". dash-2 dash-2 ."
-                       ". mkr-token-vid mkr-holders-govern-dai ."
-                       ". the-next-generation-text the-next-generation-text .";
+  grid-column-gap: 20px;
+  grid-template-areas: ". . header header . ."
+                       "jumbo jumbo jumbo jumbo jumbo jumbo"
+                       ". . dash-1 dash-1 . ."
+                       ". . why-dai dai-system-vid . ."
+                       ". . with-dai-text with-dai-text . ."
+                       ". . dash-2 dash-2 . ."
+                       ". . mkr-token-vid mkr-holders-govern-dai . ."
+                       ". . the-next-generation-text the-next-generation-text . .";
   background-color: white;
+}
+
+@media (max-width: 990px) {
+  #main-grid {
+    grid-template-columns: auto 8% [content-start] 1fr 1fr [content-end] 8% auto;
+  }
+}
+
+@media (max-width: 845px) {
+  #main-grid {
+    grid-template-columns: 8% [content-start] 1fr [content-end] 8%;
+    justify-items: center;
+    grid-template-areas: ". header ."
+                         "jumbo jumbo jumbo "
+                         ". why-dai ."
+                         ". dai-system-vid ."
+                         ". with-dai-text ."
+                         ". dash-2 ."
+                         ". mkr-holders-govern-dai ."
+                         ". mkr-token-vid ."
+                         ". the-next-generation-text .";
+
+  }
+
+  #why-dai .play-link, #mkr-holders-govern-dai .play-link, #dash-1 {
+    display: none;
+  }
+
+  #dai-system-vid .vid-preview {
+    float: none;
+  }
 }
 
 #footer-grid {
@@ -360,10 +392,6 @@ header nav a {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-
-}
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
