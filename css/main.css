@@ -66,6 +66,11 @@ body {
 }
 
 @font-face {
+ font-family: Roboto-Light;
+ src: url(../assets/fonts/Roboto-Light.ttf);
+}
+
+@font-face {
  font-family: Roboto-Bold;
  src: url(../assets/fonts/Roboto-Bold.ttf);
  font-weight: bold;
@@ -365,43 +370,59 @@ header nav a {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-   @media (max-width: 990px) {
-     #main-grid {
-       grid-template-columns: auto 8% [content-start] 1fr 1fr [content-end] 8% auto;
-     }
-   }
+@media (max-width: 990px) {
+  #main-grid {
+     grid-template-columns: auto 8% [content-start] 1fr 1fr [content-end] 8% auto;
+  }
+}
 
-   /* Mobile grid disposition */
-   @media (max-width: 845px) {
-     #main-grid {
-       display: grid;
-       width: 100%;
-       grid-template-columns: auto [content-start] 90% [content-end] auto;
-       justify-items: center;
-       grid-template-areas: ". header ."
-                            "jumbo jumbo jumbo "
-                            ". why-dai ."
-                            ". dai-system-vid ."
-                            ". with-dai-text ."
-                            ". dash-2 ."
-                            ". mkr-holders-govern-dai ."
-                            ". mkr-token-vid ."
-                            ". the-next-generation-text .";
+ /* Mobile grid disposition */
+@media (max-width: 845px) {
+  #main-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto [content-start] 85% [content-end] auto;
+    justify-items: center;
+    grid-template-areas: ". header ."
+                        "jumbo jumbo jumbo "
+                        ". why-dai ."
+                        ". dai-system-vid ."
+                        ". with-dai-text ."
+                        ". dash-2 ."
+                        ". mkr-holders-govern-dai ."
+                        ". mkr-token-vid ."
+                        ". the-next-generation-text .";
 
-     }
-     #why-dai .play-link, #mkr-holders-govern-dai .play-link, #dash-1 {
-       display: none;
-     }
+  }
 
-     #dai-system-vid .vid-preview {
-       float: none;
-     }
+  #why-dai {
+    margin-top: 38px;
+  }
+  
+  #why-dai .play-link, #mkr-holders-govern-dai .play-link, #dash-1 {
+    display: none;
+  }
 
-     .vid-preview img {
-       width: 100%;
-       max-width: 388px;
-     }
-   }
+  #dai-system-vid .vid-preview {
+    float: none;
+  }
+
+  .vid-preview img {
+    width: 100%;
+    max-width: 388px;
+  }
+
+  #jumbo-legend {
+    font-size: 44px;
+  }
+
+  .pitch {
+    font-family: Roboto-Light;
+    font-size: 24px;
+    color: #727272;
+    line-height: 38px;
+  }
+}
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
