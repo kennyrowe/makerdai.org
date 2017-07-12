@@ -140,6 +140,10 @@ header {
   position: relative;
 }
 
+#menu-bars {
+  display: none;
+}
+
 header #logo {
   position: absolute;
   top: 10px;
@@ -381,9 +385,10 @@ header nav a {
   #main-grid {
     display: grid;
     width: 100%;
+    grid-template-rows: 68px [header-bottom];
     grid-template-columns: auto [content-start] 85% [content-end] auto;
     justify-items: center;
-    grid-template-areas: ". header ."
+    grid-template-areas: "header header ."
                         "jumbo jumbo jumbo "
                         ". why-dai ."
                         ". dai-system-vid ."
@@ -393,6 +398,27 @@ header nav a {
                         ". mkr-token-vid ."
                         ". the-next-generation-text .";
 
+  }
+
+  header {
+    justify-self: start;
+  }
+
+  #menu-bars {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 17px;
+    font-size: 25px;
+  }
+
+  header #logo {
+    height: 50px;
+    left: 40px;
+  }
+
+  header nav {
+    display: none;
   }
 
   #why-dai {
