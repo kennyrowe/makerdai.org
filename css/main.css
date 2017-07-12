@@ -398,7 +398,7 @@ header nav a {
   #why-dai {
     margin-top: 38px;
   }
-  
+
   #why-dai .play-link, #mkr-holders-govern-dai .play-link, #dash-1 {
     display: none;
   }
@@ -410,6 +410,10 @@ header nav a {
   .vid-preview img {
     width: 100%;
     max-width: 388px;
+  }
+
+  #jumbo {
+    height: 340px;
   }
 
   #jumbo-legend {
