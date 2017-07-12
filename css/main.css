@@ -354,6 +354,10 @@ header nav a {
   font-family: Roboto-Bold;
 }
 
+#icon-links {
+  display: none;
+}
+
 #copyright {
   grid-area: copyright;
   font-family: Roboto-Regular;
@@ -470,6 +474,7 @@ header nav a {
     grid-template-columns: 1fr [content-start] 85% [content-end] 1fr;
     grid-template-areas:  ". subscribe ."
                           ". dai-foundation-text ."
+                          ". icon-links ."
                           "copyright copyright copyright";
     background-color: white;
     padding-bottom: 0;
@@ -493,6 +498,23 @@ header nav a {
 
   #links {
     display: none;
+  }
+
+  #icon-links {
+    grid-area: icon-links;
+    display: flex;
+    justify-content: center;
+  }
+
+  #icon-links a {
+    font-size: 36px;
+    color: #1BC4A6;
+    transition: color 0.5s;
+    padding: 0 .4rem;
+  }
+
+  #icon-links a:hover {
+    color: #FCD370;
   }
 
   #copyright {
