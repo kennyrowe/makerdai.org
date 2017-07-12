@@ -386,6 +386,10 @@ header nav a {
   .vid-preview img {
     width: 350px;
   }
+
+  #footer-grid {
+    grid-template-columns: auto 350px 350px auto;
+  }
 }
 
  /* Mobile grid disposition */
