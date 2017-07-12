@@ -113,28 +113,6 @@ p {
   overflow: hidden;
 }
 
-
-
-#footer-grid {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: auto 418px 418px auto;
-  justify-items: stretch;
-  grid-row-gap: 52px;
-  padding-top: 60px;
-  padding-bottom: 55px;
-  grid-template-areas: ". subscribe dai-foundation-text ."
-                       ". links links ."
-                       ". copyright copyright .";
-  background-color: #0B141F;
-  color: white;
-  overflow: hidden;
-}
-
-#footer-grid p {
-  color: white;
-}
-
 header {
   grid-area: header;
   position: relative;
@@ -298,6 +276,26 @@ header nav a {
   padding-bottom: 90px;
 }
 
+#footer-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto 418px 418px auto;
+  justify-items: stretch;
+  grid-row-gap: 52px;
+  padding-top: 60px;
+  padding-bottom: 55px;
+  grid-template-areas: ". subscribe dai-foundation-text ."
+                       ". links links ."
+                       ". copyright copyright .";
+  background-color: #0B141F;
+  color: white;
+  overflow: hidden;
+}
+
+#footer-grid p {
+  color: white;
+}
+
 #subscribe {
   grid-area: subscribe;
 }
@@ -363,11 +361,13 @@ header nav a {
   color: #8A8A8A;
 }
 
+#copyright img {
+  margin-left: 7px;
+}
 
-
-
-
-
+#copyright span {
+  margin-left: 27px;
+}
 
 
 
@@ -406,43 +406,6 @@ header nav a {
                         ". mkr-token-vid ."
                         ". the-next-generation-text .";
 
-  }
-
-  #footer-grid {
-    width: 100%;
-    grid-template-columns: 1fr [content-start] 85% [content-end] 1fr;
-    grid-template-areas:  ". subscribe ."
-                          ". dai-foundation-text ."
-                          "copyright copyright copyright";
-    background-color: white;
-    padding-bottom: 0;
-    padding-top: 0;
-  }
-
-  #subscribe .big-text {
-    color: #121212;
-  }
-
-  #subscribe input {
-    max-width: 325px;
-    width: 100%;
-    font-size: 16px;
-    color: #727272;
-  }
-
-  #footer-grid p {
-    color: #606060;
-  }
-
-  #links {
-    display: none;
-  }
-
-  #copyright {
-    background-color: #0B141F;
-    align-self: stretch;
-    justify-self: stretch;
-    height: 143px;
   }
 
   header {
@@ -496,6 +459,57 @@ header nav a {
     font-size: 24px;
     color: #727272;
     line-height: 38px;
+  }
+
+  #footer-grid {
+    width: 100%;
+    grid-template-columns: 1fr [content-start] 85% [content-end] 1fr;
+    grid-template-areas:  ". subscribe ."
+                          ". dai-foundation-text ."
+                          "copyright copyright copyright";
+    background-color: white;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  #subscribe .big-text {
+    color: #121212;
+  }
+
+  #subscribe input {
+    max-width: 325px;
+    width: 100%;
+    font-size: 16px;
+    color: #727272;
+  }
+
+  #footer-grid p {
+    color: #606060;
+  }
+
+  #links {
+    display: none;
+  }
+
+  #copyright {
+    background-color: #0B141F;
+    align-self: stretch;
+    justify-self: stretch;
+    height: 143px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  #copyright img, #copyright span {
+    display: block;
+    margin-left: 0;
+  }
+
+  #copyright span {
+    margin-top: 17px;
   }
 }
 
