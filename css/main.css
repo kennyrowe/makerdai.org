@@ -252,8 +252,6 @@ header nav a {
 
 .vid-preview img {
   display: block;
-  width: 100%;
-  max-width: 388px;
 }
 
 .vid-summary {
@@ -397,6 +395,11 @@ header nav a {
 
      #dai-system-vid .vid-preview {
        float: none;
+     }
+
+     .vid-preview img {
+       width: 100%;
+       max-width: 388px;
      }
    }
 
