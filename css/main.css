@@ -378,10 +378,18 @@ header nav a {
   #main-grid {
      grid-template-columns: auto 8% [content-start] 1fr 1fr [content-end] 8% auto;
   }
+
+  #dai-system-vid, #mkr-token-vid {
+    align-self: center;
+  }
+
+  .vid-preview img {
+    width: 350px;
+  }
 }
 
  /* Mobile grid disposition */
-@media (max-width: 845px) {
+@media (max-width: 768px) {
   #main-grid {
     display: grid;
     width: 100%;
