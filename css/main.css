@@ -408,6 +408,43 @@ header nav a {
 
   }
 
+  #footer-grid {
+    width: 100%;
+    grid-template-columns: 1fr [content-start] 85% [content-end] 1fr;
+    grid-template-areas:  ". subscribe ."
+                          ". dai-foundation-text ."
+                          "copyright copyright copyright";
+    background-color: white;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  #subscribe .big-text {
+    color: #121212;
+  }
+
+  #subscribe input {
+    max-width: 325px;
+    width: 100%;
+    font-size: 16px;
+    color: #727272;
+  }
+
+  #footer-grid p {
+    color: #606060;
+  }
+
+  #links {
+    display: none;
+  }
+
+  #copyright {
+    background-color: #0B141F;
+    align-self: stretch;
+    justify-self: stretch;
+    height: 143px;
+  }
+
   header {
     justify-self: start;
   }
