@@ -105,38 +105,10 @@ p {
                        ". . mkr-token-vid mkr-holders-govern-dai . ."
                        ". . the-next-generation-text the-next-generation-text . .";
   background-color: white;
+  overflow: hidden;
 }
 
-@media (max-width: 990px) {
-  #main-grid {
-    grid-template-columns: auto 8% [content-start] 1fr 1fr [content-end] 8% auto;
-  }
-}
 
-@media (max-width: 845px) {
-  #main-grid {
-    grid-template-columns: 8% [content-start] 1fr [content-end] 8%;
-    justify-items: center;
-    grid-template-areas: ". header ."
-                         "jumbo jumbo jumbo "
-                         ". why-dai ."
-                         ". dai-system-vid ."
-                         ". with-dai-text ."
-                         ". dash-2 ."
-                         ". mkr-holders-govern-dai ."
-                         ". mkr-token-vid ."
-                         ". the-next-generation-text .";
-
-  }
-
-  #why-dai .play-link, #mkr-holders-govern-dai .play-link, #dash-1 {
-    display: none;
-  }
-
-  #dai-system-vid .vid-preview {
-    float: none;
-  }
-}
 
 #footer-grid {
   display: grid;
@@ -151,6 +123,7 @@ p {
                        ". copyright copyright .";
   background-color: #0B141F;
   color: white;
+  overflow: hidden;
 }
 
 #footer-grid p {
@@ -279,6 +252,8 @@ header nav a {
 
 .vid-preview img {
   display: block;
+  width: 100%;
+  max-width: 388px;
 }
 
 .vid-summary {
@@ -392,6 +367,38 @@ header nav a {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+   @media (max-width: 990px) {
+     #main-grid {
+       grid-template-columns: auto 8% [content-start] 1fr 1fr [content-end] 8% auto;
+     }
+   }
+
+   /* Mobile grid disposition */
+   @media (max-width: 845px) {
+     #main-grid {
+       display: grid;
+       width: 100%;
+       grid-template-columns: auto [content-start] 90% [content-end] auto;
+       justify-items: center;
+       grid-template-areas: ". header ."
+                            "jumbo jumbo jumbo "
+                            ". why-dai ."
+                            ". dai-system-vid ."
+                            ". with-dai-text ."
+                            ". dash-2 ."
+                            ". mkr-holders-govern-dai ."
+                            ". mkr-token-vid ."
+                            ". the-next-generation-text .";
+
+     }
+     #why-dai .play-link, #mkr-holders-govern-dai .play-link, #dash-1 {
+       display: none;
+     }
+
+     #dai-system-vid .vid-preview {
+       float: none;
+     }
+   }
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
