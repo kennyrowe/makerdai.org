@@ -452,6 +452,69 @@ header nav a {
 
   }
 
+  header nav {
+    display: none;
+  }
+
+  #main-grid.menu-opened {
+    position: relative;
+    left: 236px;
+  }
+
+  #main-grid.menu-opened header nav{
+    display: block;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 236px;
+    background-color: #1D252A;
+    margin: 0;
+    z-index: 3;
+  }
+
+  .menu-container {
+    margin: 30px;
+  }
+
+  .menu-category {
+    font-family: Futura;
+    font-size: 24px;
+    color: #FAFAFA;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+
+  .menu-category .fa-angle-down {
+    position: absolute;
+    right: 0;
+  }
+
+  header nav div {
+    display: block;
+    margin-left: 0;
+    z-index: 3;
+  }
+
+  .menu {
+    position: static;
+    background-color: #1D252A;
+    box-shadow: none;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .menu a {
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    color: #DFE2E9;
+    letter-spacing: 0;
+    line-height: 48px;
+  }
+
   header {
     justify-self: start;
   }
@@ -467,10 +530,6 @@ header nav a {
   header #logo {
     height: 50px;
     left: 40px;
-  }
-
-  header nav {
-    display: none;
   }
 
   #why-dai {

@@ -1,6 +1,6 @@
 
 $(function() {
-  // NAV BAR menu
+  // NAV BAR MENU
   $('body').click(function(e) {
     var menuClicked;
     if ($(e.target).hasClass('menu-category')) {
@@ -18,4 +18,10 @@ $(function() {
       $('.menu-container').removeClass('active')
     }
   })
+
+  // MOBILE MENU
+  $("#menu-bars").click(function() {
+    $('#main-grid').toggleClass('menu-opened');
+  })
+
 })
