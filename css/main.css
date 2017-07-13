@@ -133,12 +133,48 @@ header nav {
   margin-top: 30px;
 }
 
-header nav a {
+header nav div {
+  display: inline;
   margin-left: 47px;
+}
+
+header nav a {
   text-decoration: none;
   font-family: Roboto-Regular;
   font-size: 16px;
   color: #8A8A8A;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu-container.active .menu-category {
+  color: #19BC9C;
+}
+
+.menu-container .menu {
+  display: none;
+}
+
+.menu-container.active .menu {
+  display: block;
+}
+
+.menu {
+  position: absolute;
+  top: 25px;
+  left: -65px;
+  z-index: 3;
+  width: 200px;
+  background-color: white;
+  padding: 9px 1px 13px 27px;
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  color: #8A8A8A;
+  line-height: 38px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24);
+  border-radius: 3px;
 }
 
 #jumbo {
@@ -416,6 +452,69 @@ header nav a {
 
   }
 
+  header nav {
+    display: none;
+  }
+
+  #main-grid.menu-opened {
+    position: relative;
+    left: 236px;
+  }
+
+  #main-grid.menu-opened header nav{
+    display: block;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 236px;
+    background-color: #1D252A;
+    margin: 0;
+    z-index: 3;
+  }
+
+  .menu-container {
+    margin: 30px;
+  }
+
+  .menu-category {
+    font-family: Futura;
+    font-size: 24px;
+    color: #FAFAFA;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+
+  .menu-category .fa-angle-down {
+    position: absolute;
+    right: 0;
+  }
+
+  header nav div {
+    display: block;
+    margin-left: 0;
+    z-index: 3;
+  }
+
+  .menu {
+    position: static;
+    background-color: #1D252A;
+    box-shadow: none;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .menu a {
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    color: #DFE2E9;
+    letter-spacing: 0;
+    line-height: 48px;
+  }
+
   header {
     justify-self: start;
   }
@@ -431,10 +530,6 @@ header nav a {
   header #logo {
     height: 50px;
     left: 40px;
-  }
-
-  header nav {
-    display: none;
   }
 
   #why-dai {
