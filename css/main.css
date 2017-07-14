@@ -409,6 +409,34 @@ header nav a {
   margin-left: 27px;
 }
 
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.close-vid-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #dcdcdc;
+}
+
+.close-vid-btn.fa {
+  font-size: 30px;
+}
+
+.close-vid-btn:hover {
+  color: white;
+}
 
 
 /* ==========================================================================

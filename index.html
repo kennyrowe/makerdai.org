@@ -67,7 +67,7 @@
             </div>
             <div id="jumbo-content">
               <span id="jumbo-legend">Dai is a decentralized stablecoin</span>
-              <div id="watch-overview-btn">
+              <div id="watch-overview-btn" class="js-show-vid" data-vid="dai-overview">
                 <span class="play-link">
                   <a class="play-link-btn" href="#"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
                   <a class="play-link-text" href="#">Watch Overview</a>
@@ -83,7 +83,7 @@
                 Dai is a cryptocurrency that automatically reacts to emergent market conditions in order to stabilize its value against the major world currencies. Dai is created by the Dai Stablecoin System, a decentralized platform that runs on the Ethereum blockchain.
               </p>
               <p>
-                <span class="play-link">
+                <span class="play-link js-show-vid" data-vid="dai-stablecoin-system">
                   <a class="play-link-btn" href="#"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
                   <a class="play-link-text" href="#">How Dai works</a>
                 </span>
@@ -91,7 +91,7 @@
             </div>
             <div id="dai-system-vid">
               <div class="vid-preview">
-                <img src="assets/img/videopreview-dai.png"></img>
+                <img src="assets/img/videopreview-dai.png" class="js-show-vid" data-vid="dai-stablecoin-system"></img>
                 <span class="vid-summary">Dai Stablecoin System (1:43)</span>
               </div>
             </div>
@@ -110,7 +110,7 @@
                 Maker is a decentralized autonomous organization on the Ethereum blockchain seeking to minimize the price volatility of its own stable token — the Dai — against the IMF’s international currency basket SDR.
               </p>
               <p>
-                <span class="play-link">
+                <span class="play-link js-show-vid" data-vid="mkr-governance-token">
                   <a class="play-link-btn" href="#"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
                   <a class="play-link-text" href="#">How MKR works</a>
                 </span>
@@ -118,7 +118,7 @@
             </div>
             <div id="mkr-token-vid">
               <div class="vid-preview">
-                <img src="assets/img/videopreview-mkr.png"></img>
+                <img src="assets/img/videopreview-mkr.png" class="js-show-vid" data-vid="mkr-governance-token"></img>
                 <span class="vid-summary">MKR Governance Token (1:25)</span>
               </div>
             </div>
@@ -178,6 +178,8 @@
               <img src="assets/img/MKR-footer.png" /><span>© Dai Foundation 2017</span>
             </div>
           </div> <!-- / #footer-grid -->
+          <div id="videos">
+          </div>
         </div> <!-- / #content -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
