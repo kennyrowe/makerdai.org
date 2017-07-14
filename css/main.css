@@ -216,6 +216,11 @@ header nav a {
   margin-top: 28px;
 }
 
+#watch-overview-btn:hover {
+  background-color: rgba(90,90,90,0.1);
+  cursor: pointer;
+}
+
 #watch-overview-btn .play-link {
   margin-left: 22px;
   position: relative;
@@ -224,6 +229,10 @@ header nav a {
 
 #watch-overview-btn .play-link a {
   color: #FFF;
+}
+
+.play-link:hover {
+  opacity: 0.8;
 }
 
 .play-link-btn {/* play icon */
@@ -275,6 +284,11 @@ header nav a {
 
 .vid-preview img {
   display: block;
+}
+
+.vid-preview img:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .vid-summary {
@@ -409,6 +423,34 @@ header nav a {
   margin-left: 27px;
 }
 
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.close-vid-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #dcdcdc;
+}
+
+.close-vid-btn.fa {
+  font-size: 30px;
+}
+
+.close-vid-btn:hover {
+  color: white;
+}
 
 
 /* ==========================================================================
@@ -456,12 +498,12 @@ header nav a {
     display: none;
   }
 
-  #main-grid.menu-opened {
+  #content.menu-opened {
     position: relative;
     left: 236px;
   }
 
-  #main-grid.menu-opened header nav{
+  #content.menu-opened #main-grid header nav{
     display: block;
   }
 

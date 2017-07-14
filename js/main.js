@@ -21,7 +21,32 @@ $(function() {
 
   // MOBILE MENU
   $("#menu-bars").click(function() {
-    $('#main-grid').toggleClass('menu-opened');
+    $('#content').toggleClass('menu-opened');
+  })
+
+  // VIDEOS
+  var videoIds = {
+    "dai-overview": 224484258,
+    "dai-stablecoin-system": 224484809,
+    "mkr-governance-token": 224485354
+  };
+
+  $('.js-show-vid').click(function(e) {
+    e.preventDefault();
+    var vidName = $(this).data('vid');
+    var id = videoIds[vidName];
+    if (!id) {
+      console.error('Invalid video name "' + vidName + '"');
+      return;
+    }
+    $('#videos').html('<div class="video-background">' +
+      '<i class="fa fa-times close-vid-btn" aria-hidden="true"></i>' +
+      '<iframe src="https://player.vimeo.com/video/' + id +'?autoplay=1" ' +
+      'width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>' +
+      '</iframe></div>');
+    $('.close-vid-btn,.video-background').click(function() {
+      $('#videos').html('');
+    })
   })
 
 })
