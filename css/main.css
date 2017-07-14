@@ -456,12 +456,12 @@ header nav a {
     display: none;
   }
 
-  #main-grid.menu-opened {
+  #content.menu-opened {
     position: relative;
     left: 236px;
   }
 
-  #main-grid.menu-opened header nav{
+  #content.menu-opened #main-grid header nav{
     display: block;
   }
 

@@ -21,7 +21,7 @@ $(function() {
 
   // MOBILE MENU
   $("#menu-bars").click(function() {
-    $('#main-grid').toggleClass('menu-opened');
+    $('#content').toggleClass('menu-opened');
   })
 
 })
