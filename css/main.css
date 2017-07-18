@@ -238,7 +238,7 @@ header nav a {
   color: #FFF;
 }
 
-.play-link:hover {
+.play-link:hover, .booklet:hover {
   opacity: 0.8;
 }
 
