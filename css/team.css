@@ -1,0 +1,15 @@
+#main-grid {
+  grid-template-areas: ". . header header . ."
+                       "jumbo jumbo jumbo jumbo jumbo jumbo"
+                       ". . team-portraits team-portraits . .";
+}
+
+#team-portraits {
+  grid-area: team-portraits;
+  display: flex;
+}
+
+#team-portraits img {
+  width: 192px;
+  height: 204px;
+}
