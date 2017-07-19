@@ -83,7 +83,7 @@ body {
 
 @font-face {
  font-family: Futura;
- src: url(../assets/fonts/Futura.ttc);
+ src: url(../assets/fonts/Futura.ttf);
 }
 
 .big-text {
@@ -518,7 +518,7 @@ header nav a {
     grid-template-rows: 68px [header-bottom];
     grid-template-columns: auto [content-start] 85% [content-end] auto;
     justify-items: center;
-    grid-template-areas: "header header ."
+    grid-template-areas: ". header ."
                         "jumbo jumbo jumbo "
                         ". why-dai ."
                         ". dai-system-vid ."
@@ -603,7 +603,6 @@ header nav a {
     display: block;
     position: absolute;
     top: 25px;
-    left: 17px;
     font-size: 25px;
   }
 
