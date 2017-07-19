@@ -429,6 +429,10 @@ header nav a {
   text-decoration: none;
 }
 
+.link-group a:hover {
+  color: #ccc;
+}
+
 .link-group span {
   font-family: Roboto-Bold;
 }
