@@ -623,8 +623,18 @@ header nav a {
   #menu-bars {
     display: block;
     position: absolute;
-    top: 25px;
+    top: 10px;
     font-size: 25px;
+    height: 50px;
+    width: 50px;
+    left:-15px;
+  }
+
+  #menu-bars:before {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50% );
   }
 
   header #logo {
