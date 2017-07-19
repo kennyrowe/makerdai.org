@@ -581,16 +581,17 @@ header nav a {
   }
 
   .menu-category {
-    font-family: Futura;
+    font-family: Futura, sans-serif;
+    width: 100%;
+    display: inline-block;
     font-size: 24px;
     color: #FAFAFA;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 1;
   }
 
   .menu-category .fa-angle-down {
-    position: absolute;
-    right: 0;
+    float:right;
   }
 
   header nav div {
