@@ -1,6 +1,12 @@
 
 $(function() {
   // NAV BAR MENU
+    $(document).on("swipeleft",function(){
+        $('#content').removeClass('menu-opened');
+    });
+    $(document).on("swiperight",function(){
+        $('#content').addClass('menu-opened');
+    });
   $('body').click(function(e) {
     var menuClicked;
     if ($(e.target).hasClass('menu-category')) {
