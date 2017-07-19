@@ -156,7 +156,7 @@ header nav a {
   position: relative;
 }
 
-.menu-container.active .menu-category {
+.menu-container:hover .menu-category, .menu a:hover {
   color: #19BC9C;
 }
 
@@ -164,13 +164,17 @@ header nav a {
   display: none;
 }
 
-.menu-container.active .menu {
+.menu-container:hover .menu {
   display: block;
+}
+
+.menu:hover {
+    display: block;
 }
 
 .menu {
   position: absolute;
-  top: 25px;
+  top: 15px;
   left: -65px;
   z-index: 3;
   width: 200px;
