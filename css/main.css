@@ -155,21 +155,37 @@ header nav a {
   position: relative;
 }
 
-.menu-container.active .menu-category {
-  color: #19BC9C;
+@media all and (max-width: 768px) {
+    .menu-container.active .menu-category {
+        color: #19BC9C;
+    }
+
+    .menu-container.active .menu {
+        display: block;
+    }
+}
+
+@media all and (min-width: 769px) {
+    .menu-container:hover .menu-category, .menu a:hover {
+        color: #19BC9C;
+    }
+
+    .menu-container:hover .menu {
+        display: block;
+    }
 }
 
 .menu-container .menu {
-  display: none;
+    display: none;
 }
 
-.menu-container.active .menu {
-  display: block;
+.menu:hover {
+    display: block;
 }
 
 .menu {
   position: absolute;
-  top: 25px;
+  top: 15px;
   left: -65px;
   z-index: 3;
   width: 200px;
