@@ -1,7 +1,7 @@
 
 $(function() {
   // NAV BAR MENU
-    $(window).on('scroll', function () {
+    $(document).on("swipeleft",function(){
         $('#content').removeClass('menu-opened');
     });
   $('body').click(function(e) {

@@ -528,6 +528,10 @@ header nav a {
 
  /* Mobile grid disposition */
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   #main-grid {
     display: grid;
     width: 100%;
