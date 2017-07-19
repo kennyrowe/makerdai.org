@@ -26,9 +26,9 @@ $(function() {
 
   // VIDEOS
   var videoIds = {
-    "dai-overview": 224484258,
-    "dai-stablecoin-system": 224484809,
-    "mkr-governance-token": 224485354
+    "dai-overview": 225643431,
+    "dai-stablecoin-system": 225643573,
+    "mkr-governance-token": 225643767
   };
 
   $('.js-show-vid').click(function(e) {
