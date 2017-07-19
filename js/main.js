@@ -1,6 +1,9 @@
 
 $(function() {
   // NAV BAR MENU
+    $(window).on('scroll', function () {
+        $('#content').removeClass('menu-opened');
+    });
   $('body').click(function(e) {
     var menuClicked;
     if ($(e.target).hasClass('menu-category')) {
