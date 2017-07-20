@@ -10,7 +10,11 @@
   justify-content: space-around;
   flex-wrap: wrap;
   padding-top: 67px;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
+}
+
+.member {
+  margin-bottom: 50px;
 }
 
 .member img {
