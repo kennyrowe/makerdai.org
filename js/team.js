@@ -92,8 +92,8 @@ $(function() {
   var teamHtml = '';
   team.forEach(function(member) {
     teamHtml += '<div class="member">' +
-      '<img src="assets/img/team/' + member.pic + '"/>' +
-      '<span class="name">' + member.name + '</span>' +
+      '<div class="member-img-container"><img src="assets/img/team/' + member.pic + '"/></div>' +
+      '<span class="name">' + member.name + '</span><br>' +
       '<span class="role">' + member.role + '</span>' +
       '</div>';
   });

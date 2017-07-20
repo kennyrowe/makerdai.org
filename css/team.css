@@ -7,11 +7,25 @@
 #team-portraits {
   grid-area: team-portraits;
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-#team-portraits img {
+.member img {
+  height: 100%;
+}
+
+.member span {
+  font-family: Roboto-Regular;
+  font-size: 15px;
+  color: #727272;
+  line-height: 28px;
+}
+
+.member-img-container {
   width: 192px;
   height: 204px;
+  overflow: hidden;
 }
 
 #jumbo {
