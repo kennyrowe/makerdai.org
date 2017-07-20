@@ -139,20 +139,11 @@ header nav {
   margin-top: 30px;
 }
 
-header nav div {
-  display: inline;
-  margin-left: 47px;
-}
-
 header nav a {
   text-decoration: none;
-  font-family: Roboto-Regular;
+  font-family: Roboto-Regular, sans-serif;
   font-size: 16px;
   color: #8A8A8A;
-}
-
-.menu-container {
-  position: relative;
 }
 
 @media all and (max-width: 768px) {
@@ -166,6 +157,22 @@ header nav a {
 }
 
 @media all and (min-width: 769px) {
+    header {
+        position: static;
+    }
+
+    .menu-container {
+        display: inline-block;
+    }
+
+    .menu-container:not(:first-child) {
+        margin-left: 48px;
+    }
+
+    .menu-category {
+        position: relative;
+    }
+
     .menu-container:hover .menu-category, .menu a:hover {
         color: #19BC9C;
     }
@@ -175,28 +182,18 @@ header nav a {
     }
 }
 
-.menu-container .menu {
-    display: none;
-}
-
-.menu:hover {
-    display: block;
-}
-
 .menu {
-  position: absolute;
-  top: 15px;
-  left: -65px;
-  z-index: 3;
-  width: 200px;
-  background-color: white;
-  padding: 9px 1px 13px 27px;
-  font-family: Roboto-Regular;
-  font-size: 16px;
-  color: #8A8A8A;
-  line-height: 38px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24);
-  border-radius: 3px;
+    display: none;
+    position: absolute;
+    z-index: 3;
+    background-color: white;
+    padding: 24px;
+    font-family: Roboto-Regular, sans-serif;
+    font-size: 16px;
+    color: #8A8A8A;
+    line-height: 38px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 3px;
 }
 
 #jumbo {
