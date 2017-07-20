@@ -1,6 +1,16 @@
 
 $(function() {
   // NAV BAR MENU
+    // this is a hacky way to hide the loading message that appears 'thanks' to jquery mobile.
+    // there is straightforward way to eliminate it by adding jquery mobile css but then the links styling is overwritten.
+    // TODO: find other way to hide it.
+    $('.ui-loader').css('display','none');
+    $(document).on("swipeleft",function(){
+        $('#content').removeClass('menu-opened');
+    });
+    $(document).on("swiperight",function(){
+        $('#content').addClass('menu-opened');
+    });
   $('body').click(function(e) {
     var menuClicked;
     if ($(e.target).hasClass('menu-category')) {
@@ -49,4 +59,8 @@ $(function() {
     })
   })
 
+  // SVG fallback
+  if (!Modernizr.svg) {
+    $("#logo").attr("src", "assets/img/MKRlogo.png");
+  }
 })

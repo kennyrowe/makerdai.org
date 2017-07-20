@@ -83,7 +83,7 @@ body {
 
 @font-face {
  font-family: Futura;
- src: url(../assets/fonts/Futura.ttc);
+ src: url(../assets/fonts/Futura.ttf);
 }
 
 .big-text {
@@ -131,8 +131,7 @@ header {
 
 header #logo {
   position: absolute;
-  top: 10px;
-  left: -10px;
+  top: 20px;
 }
 
 header nav {
@@ -156,21 +155,37 @@ header nav a {
   position: relative;
 }
 
-.menu-container.active .menu-category {
-  color: #19BC9C;
+@media all and (max-width: 768px) {
+    .menu-container.active .menu-category {
+        color: #19BC9C;
+    }
+
+    .menu-container.active .menu {
+        display: block;
+    }
+}
+
+@media all and (min-width: 769px) {
+    .menu-container:hover .menu-category, .menu a:hover {
+        color: #19BC9C;
+    }
+
+    .menu-container:hover .menu {
+        display: block;
+    }
 }
 
 .menu-container .menu {
-  display: none;
+    display: none;
 }
 
-.menu-container.active .menu {
-  display: block;
+.menu:hover {
+    display: block;
 }
 
 .menu {
   position: absolute;
-  top: 25px;
+  top: 15px;
   left: -65px;
   z-index: 3;
   width: 200px;
@@ -513,13 +528,17 @@ header nav a {
 
  /* Mobile grid disposition */
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   #main-grid {
     display: grid;
     width: 100%;
     grid-template-rows: 68px [header-bottom];
     grid-template-columns: auto [content-start] 85% [content-end] auto;
     justify-items: center;
-    grid-template-areas: "header header ."
+    grid-template-areas: ". header ."
                         "jumbo jumbo jumbo "
                         ". why-dai ."
                         ". dai-system-vid ."
@@ -562,16 +581,17 @@ header nav a {
   }
 
   .menu-category {
-    font-family: Futura;
+    font-family: Futura, sans-serif;
+    width: 100%;
+    display: inline-block;
     font-size: 24px;
     color: #FAFAFA;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 1;
   }
 
   .menu-category .fa-angle-down {
-    position: absolute;
-    right: 0;
+    float:right;
   }
 
   header nav div {
@@ -603,14 +623,23 @@ header nav a {
   #menu-bars {
     display: block;
     position: absolute;
-    top: 25px;
-    left: 17px;
+    top: 10px;
     font-size: 25px;
+    height: 50px;
+    width: 50px;
+    left:-15px;
+  }
+
+  #menu-bars:before {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50% );
   }
 
   header #logo {
-    height: 50px;
-    left: 40px;
+    left: 50px;
+    top: 15px;
   }
 
   #why-dai {
