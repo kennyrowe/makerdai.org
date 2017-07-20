@@ -9,6 +9,8 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding-top: 67px;
+  padding-bottom: 80px;
 }
 
 .member img {
@@ -30,12 +32,13 @@
 
 #jumbo {
   background-color: white;
-  min-height: 304px;
+  height: 400px;
 }
 
 #jumbo img {
   min-width: 1024px;
   width: 100%;
+  min-height: 100%;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
