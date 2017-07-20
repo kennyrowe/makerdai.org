@@ -16,7 +16,7 @@
 
 #jumbo {
   background-color: white;
-  height: 304px;
+  min-height: 304px;
 }
 
 #jumbo img {
@@ -29,4 +29,13 @@
 
 #jumbo-content p {
   color: white;
+}
+
+@media (max-width: 768px) {
+  #main-grid {
+    grid-template-areas: ". header ."
+                        "jumbo jumbo jumbo "
+                        ". team-portraits .";
+
+  }
 }
