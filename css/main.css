@@ -102,7 +102,7 @@ p {
 #main-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr 60px [content-start] 452px 452px [content-end] 60px 1fr;
+  grid-template-columns: 1fr 60px [content-start] 452px [middle] 452px [content-end] 60px 1fr;
   grid-template-rows: 90px [header-bottom];
   justify-items: stretch;
   grid-column-gap: 20px;
@@ -506,7 +506,7 @@ header nav a {
    ========================================================================== */
 @media (max-width: 990px) {
   #main-grid {
-     grid-template-columns: auto 8% [content-start] 1fr 1fr [content-end] 8% auto;
+     grid-template-columns: auto 8% [content-start] 1fr [middle] 1fr [content-end] 8% auto;
   }
 
   #dai-system-vid, #mkr-token-vid {
