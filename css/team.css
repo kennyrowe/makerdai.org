@@ -52,11 +52,27 @@
   color: white;
 }
 
+#jumbo-maker-logo {
+  grid-column: middle;
+  grid-row: jumbo-start;
+  z-index: 2;
+  align-self: center;
+  justify-self: center;
+}
+
+#jumbo-maker-logo img {
+  width: 230px;
+}
+
 @media (max-width: 768px) {
   #main-grid {
     grid-template-areas: ". header ."
                         "jumbo jumbo jumbo "
                         ". team-portraits .";
 
+  }
+
+  #jumbo-maker-logo {
+    display: none;
   }
 }
