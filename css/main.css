@@ -185,6 +185,7 @@ header nav a {
 .menu {
     display: none;
     position: absolute;
+    min-width: 100px;
     z-index: 3;
     background-color: white;
     padding: 24px;
