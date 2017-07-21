@@ -1,20 +1,20 @@
-$(document).ready(function() {
+$(document).ready(function () {
     // NAV BAR MENU
 
     delete Hammer.defaults.cssProps.userSelect;
 
     var hammertime = new Hammer(document.body);
-    hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+    hammertime.get('swipe').set({direction: Hammer.DIRECTION_HORIZONTAL});
 
-    hammertime.on("swipeleft",function(){
+    hammertime.on("swipeleft", function () {
         $('#content').removeClass('menu-opened');
     });
 
-    hammertime.on("swiperight",function(){
+    hammertime.on("swiperight", function () {
         $('#content').addClass('menu-opened');
     });
 
-    $('body').click(function(e) {
+    $('body').click(function (e) {
         var menuClicked;
         if ($(e.target).hasClass('menu-category')) {
             menuClicked = $(e.target).parent();
@@ -33,7 +33,7 @@ $(document).ready(function() {
     })
 
     // MOBILE MENU
-    $("#menu-bars").click(function() {
+    $("#menu-bars").click(function () {
         $('#content').toggleClass('menu-opened');
     })
 
@@ -44,7 +44,7 @@ $(document).ready(function() {
         "mkr-governance-token": 225643767
     };
 
-    $('.js-show-vid').click(function(e) {
+    $('.js-show-vid').click(function (e) {
         e.preventDefault();
         var vidName = $(this).data('vid');
         var id = videoIds[vidName];
@@ -54,10 +54,10 @@ $(document).ready(function() {
         }
         $('#videos').html('<div class="video-background">' +
             '<i class="fa fa-times close-vid-btn" aria-hidden="true"></i>' +
-            '<iframe src="https://player.vimeo.com/video/' + id +'?autoplay=1" ' +
+            '<iframe src="https://player.vimeo.com/video/' + id + '?autoplay=1" ' +
             'width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>' +
             '</iframe></div>');
-        $('.close-vid-btn,.video-background').click(function() {
+        $('.close-vid-btn,.video-background').click(function () {
             $('#videos').html('');
         })
     })
