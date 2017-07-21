@@ -779,6 +779,11 @@ No CSS grid fallback
   margin-top: 830px;
 }
 
+.no-cssgrid #footer-grid, .cssgridlegacy #footer-grid {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 @media (max-width: 768px) {
   .no-cssgrid #dash-1, .cssgridlegacy #dash-1 {
     margin-top: 0;
@@ -786,6 +791,15 @@ No CSS grid fallback
 
   .no-cssgrid #why-dai, .cssgridlegacy #why-dai {
     margin-top: 830px;
+  }
+
+  .no-cssgrid #menu-bars, .cssgridlegacy #menu-bars {
+    margin-left: 20px;
+  }
+
+  .no-cssgrid #footer-grid, .cssgridlegacy #footer-grid {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
