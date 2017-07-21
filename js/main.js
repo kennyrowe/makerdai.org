@@ -66,4 +66,9 @@ $(document).ready(function () {
   if (!Modernizr.svgasimg) {
     $("#logo").attr("src", "assets/img/MKR-logo-rounded.png");
   }
+
+  // Old browser warning
+  $('.close-warning-btn').click(function() {
+    $('.browserupgrade-grid').hide();
+  })
 });
