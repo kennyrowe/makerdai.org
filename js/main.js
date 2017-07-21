@@ -1,6 +1,8 @@
 $(document).ready(function() {
     // NAV BAR MENU
 
+    delete Hammer.defaults.cssProps.userSelect;
+
     var hammertime = new Hammer(document.body);
     hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
 
