@@ -3,47 +3,47 @@ $(function () {
     {
       name: 'Rune Christensen',
       role: 'Founder',
-      pic: 'Rune-Christensen.png'
+      pic: 'Rune.png'
     },
     {
       name: 'Andy Milenius',
       role: 'Technical Project Manager',
-      pic: 'Andy-Milenius.jpeg'
+      pic: 'Andy.png'
     },
     {
       name: 'Nikolai Mushegian',
       role: 'Lead Architect',
-      pic: 'nikolai.jpeg'
+      pic: 'Nikolai.png'
     },
     {
       name: 'Kenny Rowe',
       role: 'Head of Operations',
-      pic: 'Kenny.jpg'
+      pic: 'Kenny.png'
     },
     {
       name: 'Matt Richards',
       role: 'Head of Marketing',
-      pic: 'matt.png'
+      pic: 'Matt.png'
     },
     {
       name: 'James Reidy',
       role: 'IT Lead',
-      pic: 'James.jpeg'
+      pic: 'James.png'
     },
     {
       name: 'Daniel Brockman',
       role: 'Software Engineer',
-      pic: 'Daniel.jpeg'
+      pic: 'Daniel.png'
     },
     {
       name: 'Mariano Conti',
       role: 'Software Engineer',
-      pic: 'Mariano.jpeg'
+      pic: 'Mariano.png'
     },
     {
       name: 'Fernando Tiberti',
       role: 'Software Engineer',
-      pic: 'Ferni.jpeg'
+      pic: 'Ferni.png'
     },
     {
       name: 'Gonzalo Balabasquer',
@@ -58,7 +58,7 @@ $(function () {
     {
       name: 'Michael Brockman',
       role: 'Software Engineer',
-      pic: 'Mikael.jpeg'
+      pic: 'Mikael.png'
     },
     {
       name: 'Ryan Casey',
@@ -68,22 +68,22 @@ $(function () {
     {
       name: 'Rain Beam',
       role: 'Software Engineer',
-      pic: 'rain.png'
+      pic: 'Rain.png'
     },
     {
       name: 'Paweł Grajewski',
       role: 'Software Engineer',
-      pic: 'Paweł-Grajewski.jpg'
+      pic: 'Pawel.png'
     },
     {
       name: 'Robert Horvath',
       role: 'Software Engineer',
-      pic: 'r001.jpeg'
+      pic: 'Robert.png'
     },
     {
       name: 'Thomas Pulber',
       role: 'Software Engineer',
-      pic: 'Thomas.jpeg'
+      pic: 'Thomas.png'
     }
   ];
 
