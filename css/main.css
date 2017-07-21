@@ -734,6 +734,10 @@ header nav a {
     #copyright span {
         margin-top: 17px;
     }
+
+    .on-desktop {
+        display: none;
+    }
 }
 
 @media print,
