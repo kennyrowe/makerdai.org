@@ -1,85 +1,85 @@
 #main-grid {
-    grid-template-areas: ". . header header . ." "jumbo jumbo jumbo jumbo jumbo jumbo" ". . team-portraits team-portraits . .";
+  grid-template-areas: ". . header header . ." "jumbo jumbo jumbo jumbo jumbo jumbo" ". . team-portraits team-portraits . .";
 }
 
 #team-portraits {
-    grid-area: team-portraits;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding-top: 67px;
-    padding-bottom: 30px;
+  grid-area: team-portraits;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 67px;
+  padding-bottom: 30px;
 }
 
 .member {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .member img {
-    height: 100%;
+  height: 100%;
 }
 
 .member span {
-    font-family: Roboto-Regular;
-    font-size: 15px;
-    color: #727272;
-    line-height: 28px;
+  font-family: Roboto-Regular;
+  font-size: 15px;
+  color: #727272;
+  line-height: 28px;
 }
 
 .member-img-container {
-    width: 192px;
-    height: 204px;
-    overflow: hidden;
+  width: 192px;
+  height: 204px;
+  overflow: hidden;
 }
 
 #jumbo {
-    background-color: white;
-    height: 400px;
+  background-color: white;
+  height: 400px;
 }
 
 #jumbo img {
-    min-width: 1024px;
-    width: 100%;
-    min-height: 100%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  min-width: 1024px;
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #jumbo-content p {
-    color: white;
+  color: white;
 }
 
 #jumbo-maker-logo {
-    grid-column: middle;
-    grid-row: jumbo-start;
-    z-index: 2;
-    align-self: center;
-    justify-self: center;
+  grid-column: middle;
+  grid-row: jumbo-start;
+  z-index: 2;
+  align-self: center;
+  justify-self: center;
 }
 
 #jumbo-maker-logo img {
-    width: 230px;
+  width: 230px;
 }
 
 @media (max-width: 990px) {
-    #main-grid {
-        grid-template-columns: 1fr 1fr [content-start] 365px [middle] 365px [content-end] 1fr 1fr;
-    }
+  #main-grid {
+    grid-template-columns: 1fr 1fr [content-start] 365px [middle] 365px [content-end] 1fr 1fr;
+  }
 
-    .member {
-        margin: 10px 10px 50px 10px;
-    }
+  .member {
+    margin: 10px 10px 50px 10px;
+  }
 }
 
 @media (max-width: 768px) {
-    #main-grid {
-        grid-template-columns: auto [content-start] 85% [content-end] auto;
-        grid-template-areas: ". header ." "jumbo jumbo jumbo " ". team-portraits .";
+  #main-grid {
+    grid-template-columns: auto [content-start] 85% [content-end] auto;
+    grid-template-areas: ". header ." "jumbo jumbo jumbo " ". team-portraits .";
 
-    }
+  }
 
-    #jumbo-maker-logo {
-        display: none;
-    }
+  #jumbo-maker-logo {
+    display: none;
+  }
 }
