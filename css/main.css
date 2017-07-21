@@ -747,6 +747,25 @@ header nav a {
 
 }
 
+/* =========
+No CSS grid fallback
+============ */
+
+.no-cssgrid #jumbo, cssgridlegacy #jumbo {
+  display: none;
+}
+
+.no-cssgrid #jumbo-content, cssgridlegacy #jumbo-content {
+  margin-top: 90px;
+  background-color: teal;
+  padding: 150px;
+  background-image: url('../assets/img/jumbo-fallback-background.png');
+  background-size: auto 100%;
+  background-position: center;
+  height: 400px;
+  background-repeat: no-repeat;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

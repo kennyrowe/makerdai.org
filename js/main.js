@@ -63,7 +63,7 @@ $(document).ready(function () {
   })
 
   // SVG fallback
-  if (!Modernizr.svg) {
-    $("#logo").attr("src", "assets/img/MKRlogo.png");
+  if (!Modernizr.svgasimg) {
+    $("#logo").attr("src", "assets/img/MKR-logo-rounded.png");
   }
 });
