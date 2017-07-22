@@ -66,4 +66,10 @@ $(document).ready(function () {
   if (!Modernizr.svg) {
     $("#logo").attr("src", "assets/img/MKRlogo.png");
   }
+
+    $("#subscribe .button").click(function() {
+      // Removes focus of the button.
+      $(this).blur();
+    });
+
 });

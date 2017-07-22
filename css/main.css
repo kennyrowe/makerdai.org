@@ -383,7 +383,7 @@ header nav a {
   color: white;
 }
 
-#subscribe input:focus {
+#subscribe .email:focus {
   outline: none;
   border-bottom: 1px solid #FFFFFF;
 
@@ -425,6 +425,14 @@ header nav a {
   font-size: 22px;
   border-width: 0;
 }
+
+#subscribe .button:focus {
+  outline: none;
+  background-color: #4F6A7B;
+}
+
+
+
 
 
 #subscribe input, #subscribe .button {
