@@ -67,8 +67,14 @@ $(document).ready(function () {
     $("#logo").attr("src", "assets/img/MKR-logo-rounded.png");
   }
 
+
   // Old browser warning
   $('.close-warning-btn').click(function() {
     $('.browserupgrade-grid').hide();
   })
+
+  $("#subscribe .button").click(function() {
+    // Removes focus of the button.
+    $(this).blur();
+  });
 });
