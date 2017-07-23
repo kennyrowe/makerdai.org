@@ -63,13 +63,18 @@ $(document).ready(function () {
   })
 
   // SVG fallback
-  if (!Modernizr.svg) {
-    $("#logo").attr("src", "assets/img/MKRlogo.png");
+  if (!Modernizr.svgasimg) {
+    $("#logo").attr("src", "assets/img/MKR-logo-rounded.png");
   }
 
-    $("#subscribe .button").click(function() {
-      // Removes focus of the button.
-      $(this).blur();
-    });
 
+  // Old browser warning
+  $('.close-warning-btn').click(function() {
+    $('.browserupgrade-grid').hide();
+  })
+
+  $("#subscribe .button").click(function() {
+    // Removes focus of the button.
+    $(this).blur();
+  });
 });

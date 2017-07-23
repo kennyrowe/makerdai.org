@@ -85,6 +85,10 @@ body {
   src: url(../assets/fonts/Futura.ttf);
 }
 
+.cssgrid .browserupgrade-grid {
+  display: none;
+}
+
 .big-text {
   font-family: Futura;
   font-size: 36px;
@@ -777,6 +781,80 @@ header nav a {
 (min-resolution: 120dpi) {
 
 }
+
+/* =========
+No CSS grid fallback
+============ */
+
+.no-cssgrid .browserupgrade-grid, .cssgridlegacy .browserupgrade-grid{
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #F8FFD1;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  z-index: 10;
+  border-top: solid;
+  border-bottom: solid;
+  border-color: black;
+}
+
+.no-cssgrid #main-grid, .cssgridlegacy #main-grid {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.no-cssgrid #jumbo, .cssgridlegacy #jumbo {
+  display: none;
+}
+
+.no-cssgrid #jumbo-content, .cssgridlegacy #jumbo-content {
+  background-color: teal;
+  padding: 150px;
+  background-image: url('../assets/img/jumbo-fallback-background.png');
+  background-size: 100% 100%;
+  background-position: center;
+  height: 400px;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+}
+
+.no-cssgrid #dash-1, .cssgridlegacy #dash-1 {
+  margin-top: 830px;
+}
+
+.no-cssgrid #footer-grid, .cssgridlegacy #footer-grid {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media (max-width: 768px) {
+  .no-cssgrid #dash-1, .cssgridlegacy #dash-1 {
+    margin-top: 0;
+  }
+
+  .no-cssgrid #why-dai, .cssgridlegacy #why-dai {
+    margin-top: 830px;
+  }
+
+  .no-cssgrid #menu-bars, .cssgridlegacy #menu-bars {
+    margin-left: 20px;
+  }
+
+  .no-cssgrid #footer-grid, .cssgridlegacy #footer-grid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 
 /* ==========================================================================
    Helper classes
