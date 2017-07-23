@@ -83,3 +83,12 @@
     display: none;
   }
 }
+
+.no-cssgrid .team-page #jumbo-content, .cssgridlegacy .team-page #jumbo-content {
+  background-image: url('../assets/img/purplebg.png');
+  height: 160px;
+}
+
+.no-cssgrid #team-portraits, .cssgridlegacy #team-portraits {
+  margin-top: 400px;
+}
